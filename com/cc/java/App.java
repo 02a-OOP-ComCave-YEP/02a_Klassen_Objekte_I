@@ -15,22 +15,22 @@ public class App {
         */
 
         Cat cat = new Cat();
-        output("Block von aussen: " + cat);         // IMPLIZITE Typumwandlung Cat --> String
+        // IMPLIZITE Typumwandlung Cat --> String
+        output("Block von aussen: " + cat);
+        cat.getInstanceVariable();
 
         output("-----------------------");
 
         Cat cat2 = new Cat();
         output("Block von aussen: " + cat2);
+        cat2.getInstanceVariable();
+
 
     
     }
         
-            public static void output(String outputStr) {
-        System.out.println(outputStr);
-
-
-
-
+         public static void output(String outputStr) {
+             System.out.println(outputStr);
 
     }
 
